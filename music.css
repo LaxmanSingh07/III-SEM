@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,700&display=swap");
+/* 
+
+font-family: 'Ubuntu', sans-serif; */
+
+/* Images created by: https://unsplash.com/@pawel_czerwinski */
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  /* background-color: red; */
+  min-height: 100vh;
+  /* background: #c9ced3; */
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* font-size: 12px; */
+  font-size: 0.68rem;
+}
+
+.player-container {
+  height: 50%;
+  width: 50%;
+  background: #e7e7e7;
+  border-radius: 2rem;
+  box-shadow: 0 15px 30px 7px rgba(0, 0, 0, 0.7);
+  background: url('img/music-11.jpg');
+  /* object-fit: cover; */
+
+  background-repeat: no-repeat;
+  width: 58%;
+  position: relative;
+  
+  /* background-image: url("");  */
+  /* background-repeat: no-repeat; */
+  background-size: fit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-direction: column;
+
+
+}
+
+
+
+.img-container {
+  height: 15rem;
+  width: 15rem;
+  position: relative;
+  top: -2rem;
+  left: -15rem;
+
+}
+
+.img-container img {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 5px 30px 7px rgba(0, 0, 0, 0.9);
+}
+
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  margin: 5px 0 0;
+  color: rgb(189, 86, 86)
+}
+
+/* Progress */
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 40px 20px;
+  height: 4px;
+  width: 90%;
+  color: greenyellow;
+  object-fit: cover;
+}
+
+.progress {
+  /* background: #242323; */
+  background: linear-gradient(to top left, black 0%, red 25%, blue 75%, cyan 100%);
+  border-radius: 5px;
+  height: 100%;
+  /* change this to show progress */
+  width: 0%;
+  /*time update event */
+
+  transition: width 0.1s linear;
+}
+
+
+.duration-wrapper {
+  position: relative;
+  /* top: -25px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+  position: relative;
+  top: -15px;
+  left: 30%;
+  width: 200px;
+  align-self: flex-start;
+
+
+}
+
+.fas {
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgb(129, 129, 129);
+  margin-right: 1.5rem;
+  user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(200%);
+
+}
+
+.main-button {
+  font-size: 2rem;
+  position: relative;
+  /* top: ; */
+}
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .player-container {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-direction: column;
+  
+  }
+
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .player-controls {
+   align-self: flex-start;
+  }
+}
+
+
+@media screen and (max-width: 709px) {
+
+
+  .img-container {
+    left: 29px;
+  }
+
+
+}
+
+@media screen and (max-width: 605px) {
+
+
+  .img-container {
+    width: 35vw;
+  }
+
+
+}

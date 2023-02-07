@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<title>Email and Password Validation</title>-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./form/loginfomr.css" />
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+</head>
+<body>
+    
+    <div class="small">Welcome To our Website</div>
+    <div class="sub-heading">
+        This is <span class="role"></span>
+    </div>
+    <div class="container">
+        <div class="signup">
+            <header>Signup</header>
+            <form action="./this.html">
+                <div class="field email-field">
+                    <div class="input-field">
+                        <input type="email" placeholder="Enter your email" class="email" />
+                    </div>
+                    <span class="error email-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Please enter a valid email</p>
+                    </span>
+                </div>
+                <div class="field create-password">
+                    <div class="input-field">
+                        <input type="password" placeholder="Create password" class="password" />
+                        <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error password-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">
+                            Please enter atleast 8 charatcer with number, symbol, small and
+                            capital letter.
+                        </p>
+                    </span>
+                </div>
+                <div class="field confirm-password">
+                    <div class="input-field">
+                        <input type="password" placeholder="Confirm password" class="cPassword" />
+                        <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error cPassword-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Password don't match</p>
+                    </span>
+                </div>
+                <div class="input-field button">
+                    <input type="submit" value="Submit Now" />
+                </div>
+            </form>
+        </div>
+        </div> 
+    </div>
+    <!-- JavaScript -->
+
+    <script src="validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    
+    <script>
+      var typeData = new Typed(".role", {
+        strings: [
+          "an social media website",
+          "your music player",
+          "your excercise Tracker",
+          "your Image Gallery",
+        ],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1000,
+      });
+    </script>
+</body>
+
+</html>
